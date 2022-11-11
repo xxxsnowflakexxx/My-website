@@ -1,0 +1,128 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Tajawal" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="Snow.css">
+<title>Snowowah.online</title>
+<link rel="icon" href="Snow.ico"">
+<script type="text/javascript" src="mute.js"></script>
+<style>
+  a {
+    margin: 20px;
+    -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+    transition: color 1s; /* For modern browsers */
+}
+a:hover {
+    color: #dd02f1;
+}
+
+#video-container {
+      overflow: hidden;
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+
+    #myVideo {
+      position: absolute;
+
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -100;
+      object-fit: cover;
+      height: 100%; width: 100%;
+    }
+    #footer {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+    }
+    #footer a {
+      color: rgba(240, 8, 252, 0.5);
+      text-decoration: turquoise;
+      margin: 10px;
+      font-size: 12px;
+    }
+    #footer a:first-child {
+      float: left;
+    }
+    #footer a:last-child {
+      float: right;
+    }
+    p {
+  color: #00fff2;
+  font-size: 15px;
+  letter-spacing: 0px;
+  font-family: 'Fira Mono', monospace;
+}
+footer {
+  position: absolute;
+      bottom: 0; left: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:auto; 
+
+
+  background-image: linear-gradient(
+      -225deg,
+      #08f500 0%,
+      #00eeff 29%,
+      #ff0000 67%,
+      #ff00ea 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #000;
+    -webkit-background-clip: text;
+    
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 25px;
+}
+</style>
+
+</head>
+<body>
+<header>
+<div class="video-container">
+  <div id="video_cover"></div>
+<video id='myVideo' autoplay muted loop>
+<source src="night.mp4" type="video/mp4">
+</video>
+</div>
+<div class="audio">
+<audio loop autoplay>
+<source src="Akame.mp3" type="audio/mp3">
+<source src="Akame.mp3" type="audio/wav">
+<source src="Akame.mp3" type="audio/mpeg">
+</audio>
+</div>
+<div class="text-container">
+<div class="content">
+<h2>
+𝓼𝓷𝓸𝔀𝓸𝔀𝓪𝓱.𝓸𝓷𝓵𝓲𝓷𝓮
+</h2>
+<button class="h-button" onclick="window.open('https://www.youtube.com/channel/UChXXMfk5BKmrQOj2sPphk7g/videos', '_blank')">Youtube</button>
+<button class="h-button" onclick="window.open('https://discord.gg/9peFtRTYTB', '_blank')">Discord</button>
+<button class="h-button" onclick="window.open('https://github.com/xxxsnowflakexxx', '_blank')">Github</button>
+<button class="h-button" onclick="window.open('https://linktr.ee/owoah', '_blank')">Linktree</button>
+<button class="h-button" onclick="window.open('https://steamcommunity.com/id/402311/', '_blank')">Steam</button>
+<button class="h-button" onclick="toggleMute();">Unmute/Mute</button>
+<iframe height="2" width="2" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+<footer>
+<p>© 2022 Snowowah.online</p>
+</footer>
+</div>
+</div>
+</header>
+</body>
+<script>
+  if (window.location.host.indexOf('github.io') !== -1 && window.location.protocol !== "https:") {
+    window.location.protocol = "https";
+  }
+</script>
+</html>
